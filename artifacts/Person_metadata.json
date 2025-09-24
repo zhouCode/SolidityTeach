@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "GetSex",
+				"outputs": [
+					{
+						"internalType": "enum Person.Sex",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "SetFemale",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"sample3-5.sol": "Person"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"sample3-5.sol": {
+			"keccak256": "0x4ca799cf7309aee3f3d9e284ddaf63b8cfd3bc6884e7ad8c0f36b3d9778d09f4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9fd5136e942c330fa674b0cf189a0da2be788c1ecf0b4db3dd5d55acbd139366",
+				"dweb:/ipfs/QmaYsQD4j9qrupcP6sZUMf3FtKqfhYBgyvGbnPTkqk9rNf"
+			]
+		}
+	},
+	"version": 1
+}
