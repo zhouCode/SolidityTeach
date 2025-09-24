@@ -6,19 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_s",
-						"type": "string"
-					}
-				],
-				"name": "GetStringLength",
+				"inputs": [],
+				"name": "add",
 				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "int256",
+						"name": "result",
+						"type": "int256"
 					}
 				],
 				"stateMutability": "pure",
@@ -38,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter03/sample3-3.sol": "Demo"
+			"chapter03/variable.sol": "Variable"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -52,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter03/sample3-3.sol": {
-			"keccak256": "0x9f67d010b1a619a886be08057eedf201389202309810e7cf0ff8e012602693bb",
+		"chapter03/variable.sol": {
+			"keccak256": "0x5adc17265b876864ba089542acbeca4b165dc38487354012bf26b31b78065d9f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bbfd8bd41c4eaef2c1d88371bc44830551e06829cc6ea9ef0c1ff1d7a98783b2",
-				"dweb:/ipfs/QmXnr3tMrsPACYHxxD558qY7XUvVANKwD9KANAZbthpYbj"
+				"bzz-raw://1dcd4ad83b12a854549d6be30d1ca6025e64ce0bbebcceed9f71a62ded6634ad",
+				"dweb:/ipfs/QmYAhqPC9VoLbSPk8aUCNhcnkvyzcG67aoFeBxLLeWcDeF"
 			]
 		}
 	},

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-contract variable{
+contract Variable{
     // 标识符命名规则：
     // 1. 标识符名字的第一个字符必须是字母或下划线
     // 2. 标识符名字的第一个字符后面可以由字母，下划线或者数字组成
