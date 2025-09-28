@@ -7,12 +7,17 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "add",
+				"name": "testFixed",
 				"outputs": [
 					{
-						"internalType": "int256",
-						"name": "result",
-						"type": "int256"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "pure",
@@ -32,7 +37,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter03/Variable.sol": "Variable"
+			"chapter03/fixed.sol": "FixedDemo"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -46,12 +51,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter03/Variable.sol": {
-			"keccak256": "0xa025a45b4ad9f6dd3e3c88609606f757de6bf7ba5af34628646b2f80d2116c0a",
+		"chapter03/fixed.sol": {
+			"keccak256": "0x270984c70d85429ad82fdd56573cd591536ea8477c1862279882254da2f39403",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9d41ee6402e890077c4c3d5b9ef3ac76c251de0f96aa6d619030117dc89973d9",
-				"dweb:/ipfs/QmPudcSm4y1QrRCKbp2LPDrjwFWjKVifYnJgUoRNossrsu"
+				"bzz-raw://d1cfac026c9ae8ac227cf73dd0714f495ac288ae0572513df590f63607382fdb",
+				"dweb:/ipfs/QmYdxRisf5scuD4S2c7BoxuU93ZLVMTDPoUdKW12FSiccm"
 			]
 		}
 	},

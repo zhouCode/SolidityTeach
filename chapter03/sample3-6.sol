@@ -2,6 +2,9 @@
 pragma solidity ^0.8.24;
 
 contract StructDemo {
+    //将所有属于同一个实体（如用户、书籍、产品）的数据捆绑在一起，让代码结构更清晰。
+    // 简化数据传递 (Simplicity): 你可以轻松地在函数之间传递整个 User 对象，
+    // 或者从一个函数返回整个 User 对象，而不需要传递或返回五个独立的变量。
     struct Book {
         string Name;
         string Publisher;

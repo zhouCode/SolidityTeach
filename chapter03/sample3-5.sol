@@ -10,6 +10,9 @@ contract Person{
     function SetFemale() public {
         sex = Sex.Female;
     }
+    function SetMale() public {
+        sex = Sex.Male;
+    }
     function GetSex() public view returns(Sex){
         return sex;
     }

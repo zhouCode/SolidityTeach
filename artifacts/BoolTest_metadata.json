@@ -7,12 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "GetSex",
+				"name": "hasPermission",
 				"outputs": [
 					{
-						"internalType": "enum Person.Sex",
+						"internalType": "bool",
 						"name": "",
-						"type": "uint8"
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -20,16 +20,15 @@
 			},
 			{
 				"inputs": [],
-				"name": "SetFemale",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "SetMale",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "isActive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -46,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter03/sample3-5.sol": "Person"
+			"chapter03/bool.sol": "BoolTest"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -60,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter03/sample3-5.sol": {
-			"keccak256": "0xc936cccf9497e05669d48827d12ddded4057eba9962272ae2edd0d3cbce3f9d9",
+		"chapter03/bool.sol": {
+			"keccak256": "0x7e45da51f8c690aa355205789517ba113781ae08e3852e73fb21ffe8c175a5d2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2f7667155991c69a5be8d615c95897a61bceb5683843903e8e9aaf3f673a1cb7",
-				"dweb:/ipfs/Qmcv1XyWGSTyhgdoq5rP67emPdvd1bpc2njHi2LFsueycA"
+				"bzz-raw://a030a6cd44c6762e4c38df445d542877481e2d2d82216161f98c542b7a9bdcd1",
+				"dweb:/ipfs/QmVkWLfBGVH1aqz23hJQRkRTegun7M6pVwrQ8mfivapdWy"
 			]
 		}
 	},

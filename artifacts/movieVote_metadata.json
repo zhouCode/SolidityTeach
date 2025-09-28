@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
@@ -108,9 +108,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"sample3-7.sol": "movieVote"
+			"chapter03/sample3-7.sol": "movieVote"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -122,7 +122,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"sample3-7.sol": {
+		"chapter03/sample3-7.sol": {
 			"keccak256": "0x29fa2f2108bb8f380dd9e720db44e11d1eb1b1092bf4e3350e9c57ff0ff65fad",
 			"license": "MIT",
 			"urls": [

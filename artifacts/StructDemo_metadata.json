@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
@@ -71,9 +71,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"sample3-6.sol": "StructDemo"
+			"chapter03/sample3-6.sol": "StructDemo"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -85,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"sample3-6.sol": {
-			"keccak256": "0x13ef71b252c13a7ab98c642dbc3a9380724f0f5b85c1b080ffc66cfca6c6f6d2",
+		"chapter03/sample3-6.sol": {
+			"keccak256": "0x67dbe58fea41bb64bd9565136a4faba4210cc181eee9d2229f180fce3db74c0d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://14aa720157881e7c37e47ae6ca53a883b5b661e0b7d9a9ae785e7533e19f0cf2",
-				"dweb:/ipfs/QmRJq195DMJoTXNdEzdVpH2VYAYSZp8Mc7r85MPsqDGVZi"
+				"bzz-raw://7ad8c5798cde44dc7de83155bad8b4e5e0496536f700fe26f31f877facac208e",
+				"dweb:/ipfs/QmaVTVjsUz8Nb2wSZSkHKnLGZsZGE4weP8nGxfaKYx3UnD"
 			]
 		}
 	},

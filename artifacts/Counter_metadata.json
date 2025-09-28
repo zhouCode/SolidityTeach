@@ -7,29 +7,35 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "GetSex",
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "divide",
 				"outputs": [
 					{
-						"internalType": "enum Person.Sex",
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myNumber",
+				"outputs": [
+					{
+						"internalType": "uint8",
 						"name": "",
 						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "SetFemale",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "SetMale",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -46,7 +52,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter03/sample3-5.sol": "Person"
+			"chapter03/counter.sol": "Counter"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -60,12 +66,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter03/sample3-5.sol": {
-			"keccak256": "0xc936cccf9497e05669d48827d12ddded4057eba9962272ae2edd0d3cbce3f9d9",
+		"chapter03/counter.sol": {
+			"keccak256": "0x2b47a2cb73018e7a7b0932ee0c6b3e7e27fdce798848d6d2d53ec5585992d743",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2f7667155991c69a5be8d615c95897a61bceb5683843903e8e9aaf3f673a1cb7",
-				"dweb:/ipfs/Qmcv1XyWGSTyhgdoq5rP67emPdvd1bpc2njHi2LFsueycA"
+				"bzz-raw://c846f948dd4c8feead4b438628fe6b902089bca76b6e48b148935143770a062c",
+				"dweb:/ipfs/QmayxNeu4HCLsiVLYiHbLydX1pFxgqHSmdgVKsEnGtHuue"
 			]
 		}
 	},

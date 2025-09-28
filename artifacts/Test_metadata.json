@@ -7,12 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "add",
+				"name": "test",
 				"outputs": [
 					{
-						"internalType": "int256",
-						"name": "result",
-						"type": "int256"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "pure",
@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter03/Variable.sol": "Variable"
+			"hello.sol": "Test"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -46,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter03/Variable.sol": {
-			"keccak256": "0xa025a45b4ad9f6dd3e3c88609606f757de6bf7ba5af34628646b2f80d2116c0a",
+		"hello.sol": {
+			"keccak256": "0x5f9485551c14d236f463fc395679eb16d78ad3e262d2c001edd83782d2595239",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9d41ee6402e890077c4c3d5b9ef3ac76c251de0f96aa6d619030117dc89973d9",
-				"dweb:/ipfs/QmPudcSm4y1QrRCKbp2LPDrjwFWjKVifYnJgUoRNossrsu"
+				"bzz-raw://4e9c63d5392509e9bf25215f18e419bc31b7294a2103e219be676b570c9bf833",
+				"dweb:/ipfs/QmX3dW1xB6hLDsZpaf5h6YNsynJ2PJwvEVFSUwXovHewmn"
 			]
 		}
 	},
