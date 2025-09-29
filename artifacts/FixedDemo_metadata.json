@@ -1,29 +1,10 @@
 {
 	"compiler": {
-		"version": "0.8.24+commit.e11b9ed9"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [],
-				"name": "testFixed",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -39,7 +20,7 @@
 		"compilationTarget": {
 			"chapter03/fixed.sol": "FixedDemo"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -52,11 +33,11 @@
 	},
 	"sources": {
 		"chapter03/fixed.sol": {
-			"keccak256": "0x270984c70d85429ad82fdd56573cd591536ea8477c1862279882254da2f39403",
+			"keccak256": "0x4a54d2df2bd9f7135939f3dc39cac5ce9ae89a02b4f342e02f6fb2cbc6895083",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d1cfac026c9ae8ac227cf73dd0714f495ac288ae0572513df590f63607382fdb",
-				"dweb:/ipfs/QmYdxRisf5scuD4S2c7BoxuU93ZLVMTDPoUdKW12FSiccm"
+				"bzz-raw://e5e4d1f2a1d2ebf6c83bbdd0bf8629bdb0314bbfa754c2071620d301fcc48c41",
+				"dweb:/ipfs/QmeKD7zmWxSLDzccKKR4H84oubeoF7vpdE75hm2R2XH3W4"
 			]
 		}
 	},

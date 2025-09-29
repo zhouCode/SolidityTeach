@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.24+commit.e11b9ed9"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -9,19 +9,6 @@
 				"inputs": [],
 				"name": "add",
 				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "divide",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -52,9 +39,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter03/counter.sol": "Counter"
+			"chapter03/integer.sol": "Counter"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -66,12 +53,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter03/counter.sol": {
-			"keccak256": "0x2b47a2cb73018e7a7b0932ee0c6b3e7e27fdce798848d6d2d53ec5585992d743",
+		"chapter03/integer.sol": {
+			"keccak256": "0x42a34c5ef635d9fb0f72f6c8cd00a63a2d2fa09b2c4c1535ea8f8d4248fc172b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c846f948dd4c8feead4b438628fe6b902089bca76b6e48b148935143770a062c",
-				"dweb:/ipfs/QmayxNeu4HCLsiVLYiHbLydX1pFxgqHSmdgVKsEnGtHuue"
+				"bzz-raw://8487d5ef833a4de4986c6a5f163355faecbccc726ec04897bb63c341b64556de",
+				"dweb:/ipfs/QmfWktb6dZkxDSwLgoy1GwFgvssfaMZmUoDrPUvsoNwgPK"
 			]
 		}
 	},
