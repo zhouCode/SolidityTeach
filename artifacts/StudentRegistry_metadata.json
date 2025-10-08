@@ -194,7 +194,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter04/review.sol": "StudentRegistry"
+			"chapter04/review1.sol": "StudentRegistry"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -208,12 +208,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter04/review.sol": {
-			"keccak256": "0xcb28577062d5ef2ddd93916ac99172b626e2829a0516d7a527f2cedc83552a10",
+		"chapter04/review1.sol": {
+			"keccak256": "0xd80fb06017db1d1f6f92bf538c6d38d3fbbf5a485be6a09adf9c0bd92db260aa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4ff23fb2d7ef9e43395d5332a93b7b78b15de1c66972a6b73358303174cb12da",
-				"dweb:/ipfs/QmXpK9wciGJubzSSNDqrGNWbsPGME9AiZUQrMvEKXhJHkZ"
+				"bzz-raw://5ee61f138ca7f9be839e35349a10b998e29490ed8cd6684a09ce4eede2b4aacf",
+				"dweb:/ipfs/QmNqdaW3Nywp6E9DyKXNofU1qnKzMLz4sLXEQ851rTehUV"
 			]
 		}
 	},

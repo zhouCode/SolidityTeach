@@ -112,4 +112,6 @@ contract StudentRegistry {
     function getAllStudentIds() public view returns (uint[] memory) {
         return studentIds;
     }
+
+    // TODO 删除学生
 }

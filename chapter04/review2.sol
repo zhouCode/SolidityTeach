@@ -83,4 +83,6 @@ contract SimpleCrowdFund {
         (bool sent, ) = campaign.creator.call{value: campaign.raisedAmount}("");
         require(sent, "Failed to send Ether");
     }
+
+    // TODO 如果捐款目标未达成，给所有捐款者退款
 }
