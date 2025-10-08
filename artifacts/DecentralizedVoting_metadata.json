@@ -1,0 +1,221 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_proposalName",
+						"type": "string"
+					}
+				],
+				"name": "addProposal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_voterAddress",
+						"type": "address"
+					}
+				],
+				"name": "authorizeVoter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "chairperson",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getWinningProposal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "winningProposalId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "winningVoteCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "proposals",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voteCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_count",
+						"type": "uint256"
+					}
+				],
+				"name": "resetFirstNProposalVotes",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_proposalId",
+						"type": "uint256"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "voters",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isWhitelisted",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "hasVoted",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "votedProposalId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "一个简单的去中心化投票合约.",
+			"kind": "dev",
+			"methods": {
+				"addProposal(string)": {
+					"details": "主席添加一个新的提案选项",
+					"params": {
+						"_proposalName": "提案的名称"
+					}
+				},
+				"authorizeVoter(address)": {
+					"details": "主席授权一个地址投票资格",
+					"params": {
+						"_voterAddress": "要授权的地址"
+					}
+				},
+				"getWinningProposal()": {
+					"details": "统计票数并找出获胜的提案",
+					"returns": {
+						"winningProposalId": "获胜提案的ID",
+						"winningVoteCount": "获胜提案的票数"
+					}
+				},
+				"resetFirstNProposalVotes(uint256)": {
+					"details": "(示例) 演示 while 循环的用法 - 清除前N个提案的票数 注意：在实际公链上要慎用 while 循环，可能会因Gas耗尽导致交易失败。",
+					"params": {
+						"_count": "要清除票数的提案数量"
+					}
+				},
+				"vote(uint256)": {
+					"details": "投票者进行投票",
+					"params": {
+						"_proposalId": "提案的ID (数组索引)"
+					}
+				}
+			},
+			"title": "DecentralizedVoting",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"chapter04/review3.sol": "DecentralizedVoting"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"chapter04/review3.sol": {
+			"keccak256": "0x5d736179b3a1a7a85754a452997674aeb98bdb8a4b44be5c2b1506dad5254fb5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a5bc4f2da860cd7042d442986fdbef9dd7b8d82b3f6aa34d82b8694f99c48fd8",
+				"dweb:/ipfs/QmUoeh3VcHCm56oCvB5ML7QS1sH1zDDwnGSEyVcvx1hbfP"
+			]
+		}
+	},
+	"version": 1
+}

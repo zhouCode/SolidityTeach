@@ -1,44 +1,19 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "GetOwner",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "_max",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "_owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
+				"name": "sum_break",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -46,7 +21,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -63,9 +38,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter03/sample3-4.sol": "Demo"
+			"chapter04/sample4-8.sol": "Demo"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -77,12 +52,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter03/sample3-4.sol": {
-			"keccak256": "0xac0ebbfed6623b4326dcf2658cf87658ba6d259d26afb8d3034f9837f0039c0e",
+		"chapter04/sample4-8.sol": {
+			"keccak256": "0xc3c3a38788058079482bdedc9de9c2f2b9360aadf2c9590c8560754026f1f500",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://665af3c707c52118bd48bd82a081743c8727837a6e854bf0daa4a169edac6bc0",
-				"dweb:/ipfs/Qmb5W7zJKhjRGBs2nVqxvGvrggH8iuz3fiytJZ2qQ5ffhB"
+				"bzz-raw://1830c5ea4e615a69dbd825eeed9d5928cc6faf725273c548b1624f5888e1b5bb",
+				"dweb:/ipfs/QmY1oeapgk7qLhDJJN1xBApTRHvoaJJic5mMB4jrN7PYdu"
 			]
 		}
 	},
