@@ -8,8 +8,7 @@ contract Demo {
         }
         if (_x > 0) {
           return unicode"参数_x是正数。";
-        }
-        else {
+        } else {
           return unicode"参数_x是负数。";
         }
     }

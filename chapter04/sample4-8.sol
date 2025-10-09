@@ -6,7 +6,9 @@ contract Demo {
         uint _i = 0;
         uint _sum = 0;
         while (true) {
-            if (_i > _max) break;
+            if (_i > _max) {
+                break;
+            }
             _sum += _i;
             _i++;
         }
