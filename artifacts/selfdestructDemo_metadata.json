@@ -7,22 +7,20 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "add",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
+				"stateMutability": "payable",
+				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "myNumber",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint8",
-						"name": "",
-						"type": "uint8"
+						"internalType": "address payable",
+						"name": "_add",
+						"type": "address"
 					}
 				],
-				"stateMutability": "view",
+				"name": "kill",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -39,7 +37,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter03/integer.sol": "Counter"
+			"chapter05/sample5-10.sol": "selfdestructDemo"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -53,12 +51,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter03/integer.sol": {
-			"keccak256": "0x42a34c5ef635d9fb0f72f6c8cd00a63a2d2fa09b2c4c1535ea8f8d4248fc172b",
+		"chapter05/sample5-10.sol": {
+			"keccak256": "0xa829836b3c8b234f207ccbed7b487cdd3f815579bc0d3af8abfb6f897ea47a0a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8487d5ef833a4de4986c6a5f163355faecbccc726ec04897bb63c341b64556de",
-				"dweb:/ipfs/QmfWktb6dZkxDSwLgoy1GwFgvssfaMZmUoDrPUvsoNwgPK"
+				"bzz-raw://a5fa21258ba3657fc16efee362f393461bc710117526e6a2153ec78ed7a48e87",
+				"dweb:/ipfs/Qmef8UHmuvaL175j91ahiU3mU3W5tGeZfBHQqyA5QBsHfo"
 			]
 		}
 	},

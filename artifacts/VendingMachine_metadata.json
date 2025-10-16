@@ -9,24 +9,13 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_a",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_b",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "add",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
+				"name": "buy",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -43,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/sample5-04.sol": "Demo"
+			"chapter05/sample5-17.sol": "VendingMachine"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -57,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter05/sample5-04.sol": {
-			"keccak256": "0xf6874bdab933fe8110520c21a989132c390212aedaccc22406af16ec1cde3a90",
+		"chapter05/sample5-17.sol": {
+			"keccak256": "0x0b1cd01bc4a918fa4890f6df18945f6bbbfc2981479bd9fdd5a13956fe7445de",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0bc5d33648d5c84f8396104c07ed0b0e66c5bfd1de3fe6a689145c11cefcaf8d",
-				"dweb:/ipfs/QmQSr6YTtEr2aUDUzEBzySx6miXnWGqaYPbBNsx8kurVth"
+				"bzz-raw://0ecd389234171feb486704ef90c8ca1a3e82db51996238fc286421b49e8faf60",
+				"dweb:/ipfs/QmXw6oGoLG34EB2k9kd1WbkChyxGtPGw5homH7kDg4GVwp"
 			]
 		}
 	},

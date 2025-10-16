@@ -1,13 +1,13 @@
 {
-	"id": "06d0f66d919aaf6e388df8c176ac755f",
+	"id": "bed5dc033d74abb01054a5a3022b333c",
 	"_format": "hh-sol-build-info-1",
-	"solcVersion": "0.8.30",
-	"solcLongVersion": "0.8.30+commit.73712a01",
+	"solcVersion": "0.8.24",
+	"solcLongVersion": "0.8.24+commit.e11b9ed9",
 	"input": {
 		"language": "Solidity",
 		"sources": {
 			"chapter03/fixed.sol": {
-				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.24;\r\n\r\n// Solidity本身不支持浮点数 -> 没有float/double\r\n// 多数语言的float有精度问题，例如: 0.1+0.2=0.30000000000000004\r\n//  核心思想是用整数来模拟\r\n// 1 ETH = 10^18 Wei\r\ncontract FixedDemo{\r\n    \r\n}\r\n"
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.24;\r\n\r\n// Solidity本身不支持浮点数 -> 没有float/double\r\n// 多数语言的float有精度问题，例如: 0.1+0.2=0.30000000000000004\r\n// 核心思想是用整数来模拟\r\n// 1 ETH = 10^18 Wei\r\ncontract FixedDemo{\r\n    \r\n}\r\n"
 			}
 		},
 		"settings": {
@@ -49,23 +49,23 @@
 						"version": 1
 					},
 					"evm": {
-						"assembly": "    /* \"chapter03/fixed.sol\":259:287  contract FixedDemo{... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  revert(0x00, 0x00)\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"chapter03/fixed.sol\":259:287  contract FixedDemo{... */\n      mstore(0x40, 0x80)\n      revert(0x00, 0x00)\n\n    auxdata: 0xa2646970667358221220fbc824f95c20f4f539a0a39bdea252b21697e677e8ae0c6898063d47299d37dd64736f6c634300081e0033\n}\n",
+						"assembly": "    /* \"chapter03/fixed.sol\":258:286  contract FixedDemo{... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"chapter03/fixed.sol\":258:286  contract FixedDemo{... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212204fc373e50608a2a2552610451f4491385214b3868b3994e63c929bd21529776964736f6c63430008180033\n}\n",
 						"bytecode": {
 							"functionDebugData": {},
 							"generatedSources": [],
 							"linkReferences": {},
-							"object": "6080604052348015600e575f5ffd5b50603e80601a5f395ff3fe60806040525f5ffdfea2646970667358221220fbc824f95c20f4f539a0a39bdea252b21697e677e8ae0c6898063d47299d37dd64736f6c634300081e0033",
-							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xE JUMPI PUSH0 PUSH0 REVERT JUMPDEST POP PUSH1 0x3E DUP1 PUSH1 0x1A PUSH0 CODECOPY PUSH0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 PUSH0 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 EXTSTATICCALL 0xC8 0x24 EXTDELEGATECALL TLOAD KECCAK256 DELEGATECALL CREATE2 CODECOPY LOG0 LOG3 SWAP12 0xDE LOG2 MSTORE 0xB2 AND SWAP8 DUPN 0x77 0xE8 0xAE 0xC PUSH9 0x98063D47299D37DD64 PUSH20 0x6F6C634300081E00330000000000000000000000 ",
-							"sourceMap": "259:28:0:-:0;;;;;;;;;;;;;;;;;;;"
+							"object": "6080604052348015600e575f80fd5b50603e80601a5f395ff3fe60806040525f80fdfea26469706673582212204fc373e50608a2a2552610451f4491385214b3868b3994e63c929bd21529776964736f6c63430008180033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xE JUMPI PUSH0 DUP1 REVERT JUMPDEST POP PUSH1 0x3E DUP1 PUSH1 0x1A PUSH0 CODECOPY PUSH0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x4F 0xC3 PUSH20 0xE50608A2A2552610451F4491385214B3868B3994 0xE6 EXTCODECOPY SWAP3 SWAP12 0xD2 ISZERO 0x29 PUSH24 0x6964736F6C63430008180033000000000000000000000000 ",
+							"sourceMap": "258:28:0:-:0;;;;;;;;;;;;;;;;;;;"
 						},
 						"deployedBytecode": {
 							"functionDebugData": {},
 							"generatedSources": [],
 							"immutableReferences": {},
 							"linkReferences": {},
-							"object": "60806040525f5ffdfea2646970667358221220fbc824f95c20f4f539a0a39bdea252b21697e677e8ae0c6898063d47299d37dd64736f6c634300081e0033",
-							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 PUSH0 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 EXTSTATICCALL 0xC8 0x24 EXTDELEGATECALL TLOAD KECCAK256 DELEGATECALL CREATE2 CODECOPY LOG0 LOG3 SWAP12 0xDE LOG2 MSTORE 0xB2 AND SWAP8 DUPN 0x77 0xE8 0xAE 0xC PUSH9 0x98063D47299D37DD64 PUSH20 0x6F6C634300081E00330000000000000000000000 ",
-							"sourceMap": "259:28:0:-:0;;;;;"
+							"object": "60806040525f80fdfea26469706673582212204fc373e50608a2a2552610451f4491385214b3868b3994e63c929bd21529776964736f6c63430008180033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x4F 0xC3 PUSH20 0xE50608A2A2552610451F4491385214B3868B3994 0xE6 EXTCODECOPY SWAP3 SWAP12 0xD2 ISZERO 0x29 PUSH24 0x6964736F6C63430008180033000000000000000000000000 ",
+							"sourceMap": "258:28:0:-:0;;;;;"
 						},
 						"gasEstimates": {
 							"creation": {
@@ -77,183 +77,181 @@
 						"legacyAssembly": {
 							".code": [
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "PUSH",
 									"source": 0,
 									"value": "80"
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "PUSH",
 									"source": 0,
 									"value": "40"
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "MSTORE",
 									"source": 0
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "CALLVALUE",
 									"source": 0
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "DUP1",
 									"source": 0
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "ISZERO",
 									"source": 0
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "PUSH [tag]",
 									"source": 0,
 									"value": "1"
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "JUMPI",
 									"source": 0
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "PUSH",
 									"source": 0,
 									"value": "0"
 								},
 								{
-									"begin": 259,
-									"end": 287,
-									"name": "PUSH",
-									"source": 0,
-									"value": "0"
+									"begin": 258,
+									"end": 286,
+									"name": "DUP1",
+									"source": 0
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "REVERT",
 									"source": 0
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "tag",
 									"source": 0,
 									"value": "1"
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "JUMPDEST",
 									"source": 0
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "POP",
 									"source": 0
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "PUSH #[$]",
 									"source": 0,
 									"value": "0000000000000000000000000000000000000000000000000000000000000000"
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "DUP1",
 									"source": 0
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "PUSH [$]",
 									"source": 0,
 									"value": "0000000000000000000000000000000000000000000000000000000000000000"
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "PUSH",
 									"source": 0,
 									"value": "0"
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "CODECOPY",
 									"source": 0
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "PUSH",
 									"source": 0,
 									"value": "0"
 								},
 								{
-									"begin": 259,
-									"end": 287,
+									"begin": 258,
+									"end": 286,
 									"name": "RETURN",
 									"source": 0
 								}
 							],
 							".data": {
 								"0": {
-									".auxdata": "a2646970667358221220fbc824f95c20f4f539a0a39bdea252b21697e677e8ae0c6898063d47299d37dd64736f6c634300081e0033",
+									".auxdata": "a26469706673582212204fc373e50608a2a2552610451f4491385214b3868b3994e63c929bd21529776964736f6c63430008180033",
 									".code": [
 										{
-											"begin": 259,
-											"end": 287,
+											"begin": 258,
+											"end": 286,
 											"name": "PUSH",
 											"source": 0,
 											"value": "80"
 										},
 										{
-											"begin": 259,
-											"end": 287,
+											"begin": 258,
+											"end": 286,
 											"name": "PUSH",
 											"source": 0,
 											"value": "40"
 										},
 										{
-											"begin": 259,
-											"end": 287,
+											"begin": 258,
+											"end": 286,
 											"name": "MSTORE",
 											"source": 0
 										},
 										{
-											"begin": 259,
-											"end": 287,
+											"begin": 258,
+											"end": 286,
 											"name": "PUSH",
 											"source": 0,
 											"value": "0"
 										},
 										{
-											"begin": 259,
-											"end": 287,
-											"name": "PUSH",
-											"source": 0,
-											"value": "0"
+											"begin": 258,
+											"end": 286,
+											"name": "DUP1",
+											"source": 0
 										},
 										{
-											"begin": 259,
-											"end": 287,
+											"begin": 258,
+											"end": 286,
 											"name": "REVERT",
 											"source": 0
 										}
@@ -267,7 +265,7 @@
 						},
 						"methodIdentifiers": {}
 					},
-					"metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"chapter03/fixed.sol\":\"FixedDemo\"},\"evmVersion\":\"prague\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"chapter03/fixed.sol\":{\"keccak256\":\"0x4a54d2df2bd9f7135939f3dc39cac5ce9ae89a02b4f342e02f6fb2cbc6895083\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e5e4d1f2a1d2ebf6c83bbdd0bf8629bdb0314bbfa754c2071620d301fcc48c41\",\"dweb:/ipfs/QmeKD7zmWxSLDzccKKR4H84oubeoF7vpdE75hm2R2XH3W4\"]}},\"version\":1}",
+					"metadata": "{\"compiler\":{\"version\":\"0.8.24+commit.e11b9ed9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"chapter03/fixed.sol\":\"FixedDemo\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"chapter03/fixed.sol\":{\"keccak256\":\"0x103679ca10a68727bc4a37e1ad75042930283f324a0850c65cd7e60ecd55bc44\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://505e3c249e23852ff5dbb41f6f971f5e50fad6815923a33400dd2b2573f9ae54\",\"dweb:/ipfs/QmZufBgDEj3ytYR3u74d6h3rZhk6zEvcLoc51cTNXLeiAw\"]}},\"version\":1}",
 					"storageLayout": {
 						"storage": [],
 						"types": null
@@ -316,16 +314,16 @@
 								2
 							],
 							"name": "FixedDemo",
-							"nameLocation": "268:9:0",
+							"nameLocation": "267:9:0",
 							"nodeType": "ContractDefinition",
 							"nodes": [],
 							"scope": 3,
-							"src": "259:28:0",
+							"src": "258:28:0",
 							"usedErrors": [],
 							"usedEvents": []
 						}
 					],
-					"src": "33:256:0"
+					"src": "33:255:0"
 				},
 				"id": 0
 			}

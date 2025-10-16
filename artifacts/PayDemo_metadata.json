@@ -6,19 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_a",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_b",
-						"type": "uint256"
-					}
-				],
-				"name": "add",
+				"inputs": [],
+				"name": "getAccount1Balance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -26,7 +15,27 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwnerBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pay",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -43,7 +52,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/sample5-04.sol": "Demo"
+			"chapter05/sample5-06.sol": "PayDemo"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -57,12 +66,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter05/sample5-04.sol": {
-			"keccak256": "0xf6874bdab933fe8110520c21a989132c390212aedaccc22406af16ec1cde3a90",
+		"chapter05/sample5-06.sol": {
+			"keccak256": "0x971b3d425a0c0d7c106ef9ac3966a54754ee35edc3a48efed6d11b51b44e49d8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0bc5d33648d5c84f8396104c07ed0b0e66c5bfd1de3fe6a689145c11cefcaf8d",
-				"dweb:/ipfs/QmQSr6YTtEr2aUDUzEBzySx6miXnWGqaYPbBNsx8kurVth"
+				"bzz-raw://f53a5c3d3bd9270aca655508624bb95e81a65b69356f8b08d6f2f7fcd2c98a49",
+				"dweb:/ipfs/QmXdY1dZtZkEg5TdyQLa8J48nSNGGGwdv75gAueMc9MFzU"
 			]
 		}
 	},

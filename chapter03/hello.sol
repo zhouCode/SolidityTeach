@@ -17,6 +17,7 @@ pragma solidity ^0.8.24;
 // e=6^7;
 // opcode
 
+// sturct
 contract Demo{
     function hello() public pure returns(string memory){
         return "hello world!";

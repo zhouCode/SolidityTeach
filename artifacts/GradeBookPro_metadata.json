@@ -1,0 +1,95 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_scores",
+						"type": "uint256[]"
+					}
+				],
+				"name": "processGrades",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "average",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "highestScore",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lowestScore",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "passingCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "一个用于处理班级成绩并提供多种统计功能的智能合约。",
+			"kind": "dev",
+			"methods": {
+				"processGrades(uint256[])": {
+					"details": "处理一个成绩数组，返回平均分、最高分、最低分以及及格人数。",
+					"params": {
+						"_scores": "一个包含多个学生成绩的数组。"
+					},
+					"returns": {
+						"average": "返回计算出的平均分。",
+						"highestScore": "返回数组中的最高分。",
+						"lowestScore": "返回数组中的最低分。",
+						"passingCount": "返回及格（>=60）的学生人数。"
+					}
+				}
+			},
+			"title": "GradeBookPro",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test/GradeBook.sol": "GradeBookPro"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test/GradeBook.sol": {
+			"keccak256": "0xb3babc1a7c661b7e59b17648f46a03ef8a87b3a40bea3522d680c2b90b2af6e0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://210850f84c22662457d04de839c6a5bd7436a7551034c9ac045f5dfaac586010",
+				"dweb:/ipfs/QmWSBEURsXZzHh9o3E7DDTpj3FtX1du1k8zWDLvbpfmbQp"
+			]
+		}
+	},
+	"version": 1
+}
