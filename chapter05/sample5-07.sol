@@ -9,10 +9,8 @@ contract ModifierDemo {
 
   //检查必须是合约的所有者
   modifier onlyOwner {
-    require (
-        msg.sender == owner,
-        unicode"必须是合约的所有者"
-    );
+    // 检查函数的调用者 (msg.sender) 是否等于合约的 owner
+    require (msg.sender == owner, unicode"必须是合约的所有者");
     _;
   }
 

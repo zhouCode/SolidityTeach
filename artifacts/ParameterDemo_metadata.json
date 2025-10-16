@@ -7,15 +7,27 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "Abort",
-				"outputs": [],
+				"name": "GetS",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "OnSell",
-				"outputs": [],
+				"name": "SetStrTest",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -33,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/sample5-08.sol": "modifierDemo"
+			"chapter05/sample5-09.sol": "ParameterDemo"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -47,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter05/sample5-08.sol": {
-			"keccak256": "0x3318f53ab11ac67fe60e901696285c38fd3699cf40505379cb2984e05fc58aef",
+		"chapter05/sample5-09.sol": {
+			"keccak256": "0xf5a43c3f9d3e7b9401fd31974861f581c8c113b85ffbeae3ba16d5d778bc29da",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://92f8ef53ddec65da57e728d90e7c41d2b2ae8f02cf963eb59392f759ed3024e2",
-				"dweb:/ipfs/QmNni1jRtbdYEceRYRVR2yzjiyapRnPYgvB2fEjYy6jM4E"
+				"bzz-raw://6d09280c3aad7b78b2b73a45fa72854ea407c004180393b674fb6f9b9e1f3b89",
+				"dweb:/ipfs/QmUkgdZzUdNwQfCwpRMDr56JuN16EkZiZtpjkXAe6tvYBs"
 			]
 		}
 	},

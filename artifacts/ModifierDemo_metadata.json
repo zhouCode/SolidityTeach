@@ -8,30 +8,27 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_x",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_y",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
 					}
 				],
-				"name": "swap",
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -43,12 +40,13 @@
 		"userdoc": {
 			"kind": "user",
 			"methods": {},
+			"notice": "权限控制",
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/sample5-05.sol": "Demo"
+			"chapter05/sample5-07.sol": "ModifierDemo"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -62,12 +60,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter05/sample5-05.sol": {
-			"keccak256": "0xc48e694b1f54668b7eaff8f5a76d83b0ea46d629a5d8d2d863687eacdd80d8f1",
+		"chapter05/sample5-07.sol": {
+			"keccak256": "0x1e4a0aa05537f5e094fe9e128fe4c7d805d79f435b2b83e57fb7df3deb29f58c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0528e0383e69841a330f3fd28c452e6d6c19def44fa965aa3a10344aa6d151e9",
-				"dweb:/ipfs/QmQtwkKpQP6jAbjqy6zRXDzWTaXjzS1qgHN1Bpi6oojqM3"
+				"bzz-raw://c63f84d5ca90dccf76f70ab138d9aaa7509162eb75fb092a6d0eac8836c39f2e",
+				"dweb:/ipfs/QmTy4wC8xnoqK2zcVpnNEkwqDvXjj21HKiESgUd3cQjb2Q"
 			]
 		}
 	},

@@ -12,6 +12,7 @@ contract Purchase {
     constructor(string memory _name, uint _price) {
         name = _name;
         price = _price;
+        // 必须显式声明此地址是 payable 的，因为 seller 是 payable
         seller = payable(msg.sender);
     }
 }
