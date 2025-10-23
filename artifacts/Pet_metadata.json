@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/sample5-15.sol": "Pet"
+			"chapter05/sample5-15-1.sol": "Pet"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -46,7 +46,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter05/sample5-15.sol": {
+		"chapter05/sample5-15-1.sol": {
 			"keccak256": "0xc05cdc5eb7652738b853fa827f286e8529eb0331567d8573d63321bf3e27d87d",
 			"license": "MIT",
 			"urls": [

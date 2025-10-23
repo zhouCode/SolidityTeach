@@ -9,6 +9,7 @@ contract Counter {
         // 因为 255 + 1 会导致 uint8 上溢
         myNumber = myNumber + 1; 
     }
+    // 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
     // function divide() public returns(uint){
     //     // 整数除法，向下取整
     //     uint a = 5;

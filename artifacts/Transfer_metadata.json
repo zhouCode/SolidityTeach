@@ -7,22 +7,33 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "add",
-				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "myNumber",
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "uint8",
+						"internalType": "address",
 						"name": "",
-						"type": "uint8"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "transferTo",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -39,7 +50,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter03/integer.sol": "Counter"
+			"test/test.sol": "Transfer"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -53,12 +64,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter03/integer.sol": {
-			"keccak256": "0x1de8a2e7dd54bbc91d1816bee379ef902382bbe3e4b68d0b5748b971fa1ef5a3",
+		"test/test.sol": {
+			"keccak256": "0x8abbca6fc564d5846a71f8d8fc10d2db64430547013be818c7b4ec25e9f5b5f7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://acdbc3a4aecd086fe7bb55544d2e4467c78137d3db44a445db73421be06a6ea7",
-				"dweb:/ipfs/QmPmBNpeDXsnBcZ2GuFxsesovMTjYWDfGWksXNLWPk6j2p"
+				"bzz-raw://7a90905082be85c83268f45fc1eab548415d82af80987367693f690d97f56aad",
+				"dweb:/ipfs/QmXhWspK2rJicXvjd52zSvY178KKzjVhDADEDtZeSmxFtz"
 			]
 		}
 	},

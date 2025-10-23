@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/interface.sol": "Test"
+			"chapter05/interface.sol": "Test2"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},

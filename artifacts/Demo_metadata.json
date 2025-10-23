@@ -1,37 +1,21 @@
 {
 	"compiler": {
-		"version": "0.8.24+commit.e11b9ed9"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_x",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_y",
-						"type": "uint256"
-					}
-				],
-				"name": "swap",
+				"inputs": [],
+				"name": "sum_arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -48,9 +32,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/sample5-05.sol": "Demo"
+			"chapter03/sample3-8.sol": "Demo"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -62,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter05/sample5-05.sol": {
-			"keccak256": "0xc48e694b1f54668b7eaff8f5a76d83b0ea46d629a5d8d2d863687eacdd80d8f1",
+		"chapter03/sample3-8.sol": {
+			"keccak256": "0x71d6f5978b00e4410db086e97d1b8dc2d9d0e2d8a1ff3c8f7b072d1b71a5cf92",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0528e0383e69841a330f3fd28c452e6d6c19def44fa965aa3a10344aa6d151e9",
-				"dweb:/ipfs/QmQtwkKpQP6jAbjqy6zRXDzWTaXjzS1qgHN1Bpi6oojqM3"
+				"bzz-raw://60c61a7b85867831cdd1030bef1f62d922d06f2ca31418c31a33de1f74982a76",
+				"dweb:/ipfs/QmVEYDzicjMWbquu4yvR8rChb8aZWbcBdpicPbQbcTbTPG"
 			]
 		}
 	},

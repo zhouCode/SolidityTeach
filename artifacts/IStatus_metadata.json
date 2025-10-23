@@ -6,16 +6,16 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "getStatus",
+				"outputs": [
 					{
-						"internalType": "string",
-						"name": "_sound",
-						"type": "string"
+						"internalType": "enum IStatus.Status",
+						"name": "",
+						"type": "uint8"
 					}
 				],
-				"name": "cry",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/sample5-15-1.sol": "Cat"
+			"chapter05/interface.sol": "IStatus"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -46,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter05/sample5-15-1.sol": {
-			"keccak256": "0xc05cdc5eb7652738b853fa827f286e8529eb0331567d8573d63321bf3e27d87d",
+		"chapter05/interface.sol": {
+			"keccak256": "0x5cbf6caf99d75056356eaa094a20661225b2e406905b04db93031bc448b8f1a7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://45629487e75a9ff153a612be3f0ea61a99ad3ed5e922964a98887a3de836983f",
-				"dweb:/ipfs/QmU1kQRPrJJPqTA1451yVubU6e8eY38ipCL8tmNok8kaV8"
+				"bzz-raw://6e9dcf290deef03ff794cd04f5a693ef7d5fe3fa30c64fa5d8b5ad4a3c18e2f8",
+				"dweb:/ipfs/QmP3vq2JgPVzCb5CsQkGmc5WzBEHJG29Jg6MfzT3whxFVL"
 			]
 		}
 	},

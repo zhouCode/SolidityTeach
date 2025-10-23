@@ -1,0 +1,130 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getContractBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"details": "一个允许合约拥有者存入和取出以太币的合约。",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "构造函数在合约部署时仅执行一次。 它会将部署合约的账户地址设置为拥有者。"
+				},
+				"deposit()": {
+					"details": "调用者必须是合约的拥有者。 此函数必须与以太币一起调用（即 `msg.value` > 0）。"
+				},
+				"getContractBalance()": {
+					"returns": {
+						"_0": "返回合约的余额（单位：wei）。"
+					}
+				},
+				"withdraw(uint256)": {
+					"params": {
+						"_amount": "需要取出的以太币数量（单位：wei）。"
+					}
+				}
+			},
+			"title": "OwnerFundableContract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"deposit()": {
+					"notice": "允许合约拥有者向该合约存入以太币。"
+				},
+				"getContractBalance()": {
+					"notice": "查询合约当前的以太币余额。"
+				},
+				"withdraw(uint256)": {
+					"notice": "允许合约拥有者从合约中取出指定数量的以太币。"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test/test.sol": "OwnerFundableContract"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test/test.sol": {
+			"keccak256": "0x4e5261d14f127beb6f7ceee0407d6f01806f1170ebd5a4a883940d13139a092c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6e9ccee95ed517760bd9d9d03dfdc6a48112f4582828c59aa20ca4af5c711e34",
+				"dweb:/ipfs/Qme9UQL4dXAUs5Jg9WVEojFpJ9quoW4sQb24PYdjDvgY1j"
+			]
+		}
+	},
+	"version": 1
+}

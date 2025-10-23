@@ -1,0 +1,680 @@
+{
+	"id": "028faee0f2aaba50f1a281c2764af362",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.24",
+	"solcLongVersion": "0.8.24+commit.e11b9ed9",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"chapter05/interface.sol": {
+				"content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\ninterface Test {}\n\ninterface Test2 is Test {}\n\ninterface IOrderBook {\n    struct Order {\n        address owner;\n        uint price;\n        uint quantity;\n    }\n    function getOrder(uint id) external view returns (Order memory);\n}\n\ninterface IStatus {\n    enum Status {\n        Pending,\n        Complete\n    }\n    function getStatus() external view returns (Status);\n}\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"chapter05/interface.sol": {
+				"IOrderBook": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "uint256",
+									"name": "id",
+									"type": "uint256"
+								}
+							],
+							"name": "getOrder",
+							"outputs": [
+								{
+									"components": [
+										{
+											"internalType": "address",
+											"name": "owner",
+											"type": "address"
+										},
+										{
+											"internalType": "uint256",
+											"name": "price",
+											"type": "uint256"
+										},
+										{
+											"internalType": "uint256",
+											"name": "quantity",
+											"type": "uint256"
+										}
+									],
+									"internalType": "struct IOrderBook.Order",
+									"name": "",
+									"type": "tuple"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"getOrder(uint256)": "d09ef241"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.24+commit.e11b9ed9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"getOrder\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"quantity\",\"type\":\"uint256\"}],\"internalType\":\"struct IOrderBook.Order\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"chapter05/interface.sol\":\"IOrderBook\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"chapter05/interface.sol\":{\"keccak256\":\"0x5cbf6caf99d75056356eaa094a20661225b2e406905b04db93031bc448b8f1a7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e9dcf290deef03ff794cd04f5a693ef7d5fe3fa30c64fa5d8b5ad4a3c18e2f8\",\"dweb:/ipfs/QmP3vq2JgPVzCb5CsQkGmc5WzBEHJG29Jg6MfzT3whxFVL\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				},
+				"IStatus": {
+					"abi": [
+						{
+							"inputs": [],
+							"name": "getStatus",
+							"outputs": [
+								{
+									"internalType": "enum IStatus.Status",
+									"name": "",
+									"type": "uint8"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"getStatus()": "4e69d560"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.24+commit.e11b9ed9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getStatus\",\"outputs\":[{\"internalType\":\"enum IStatus.Status\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"chapter05/interface.sol\":\"IStatus\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"chapter05/interface.sol\":{\"keccak256\":\"0x5cbf6caf99d75056356eaa094a20661225b2e406905b04db93031bc448b8f1a7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e9dcf290deef03ff794cd04f5a693ef7d5fe3fa30c64fa5d8b5ad4a3c18e2f8\",\"dweb:/ipfs/QmP3vq2JgPVzCb5CsQkGmc5WzBEHJG29Jg6MfzT3whxFVL\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				},
+				"Test": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.24+commit.e11b9ed9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"chapter05/interface.sol\":\"Test\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"chapter05/interface.sol\":{\"keccak256\":\"0x5cbf6caf99d75056356eaa094a20661225b2e406905b04db93031bc448b8f1a7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e9dcf290deef03ff794cd04f5a693ef7d5fe3fa30c64fa5d8b5ad4a3c18e2f8\",\"dweb:/ipfs/QmP3vq2JgPVzCb5CsQkGmc5WzBEHJG29Jg6MfzT3whxFVL\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				},
+				"Test2": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.24+commit.e11b9ed9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"chapter05/interface.sol\":\"Test2\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"chapter05/interface.sol\":{\"keccak256\":\"0x5cbf6caf99d75056356eaa094a20661225b2e406905b04db93031bc448b8f1a7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e9dcf290deef03ff794cd04f5a693ef7d5fe3fa30c64fa5d8b5ad4a3c18e2f8\",\"dweb:/ipfs/QmP3vq2JgPVzCb5CsQkGmc5WzBEHJG29Jg6MfzT3whxFVL\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"chapter05/interface.sol": {
+				"ast": {
+					"absolutePath": "chapter05/interface.sol",
+					"exportedSymbols": {
+						"IOrderBook": [
+							21
+						],
+						"IStatus": [
+							31
+						],
+						"Test": [
+							2
+						],
+						"Test2": [
+							5
+						]
+					},
+					"id": 32,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".20"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "32:24:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "Test",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "Test",
+							"nameLocation": "68:4:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 32,
+							"src": "58:17:0",
+							"usedErrors": [],
+							"usedEvents": []
+						},
+						{
+							"abstract": false,
+							"baseContracts": [
+								{
+									"baseName": {
+										"id": 3,
+										"name": "Test",
+										"nameLocations": [
+											"96:4:0"
+										],
+										"nodeType": "IdentifierPath",
+										"referencedDeclaration": 2,
+										"src": "96:4:0"
+									},
+									"id": 4,
+									"nodeType": "InheritanceSpecifier",
+									"src": "96:4:0"
+								}
+							],
+							"canonicalName": "Test2",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": true,
+							"id": 5,
+							"linearizedBaseContracts": [
+								5,
+								2
+							],
+							"name": "Test2",
+							"nameLocation": "87:5:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 32,
+							"src": "77:26:0",
+							"usedErrors": [],
+							"usedEvents": []
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "IOrderBook",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 21,
+							"linearizedBaseContracts": [
+								21
+							],
+							"name": "IOrderBook",
+							"nameLocation": "115:10:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "IOrderBook.Order",
+									"id": 12,
+									"members": [
+										{
+											"constant": false,
+											"id": 7,
+											"mutability": "mutable",
+											"name": "owner",
+											"nameLocation": "163:5:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 12,
+											"src": "155:13:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_address",
+												"typeString": "address"
+											},
+											"typeName": {
+												"id": 6,
+												"name": "address",
+												"nodeType": "ElementaryTypeName",
+												"src": "155:7:0",
+												"stateMutability": "nonpayable",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 9,
+											"mutability": "mutable",
+											"name": "price",
+											"nameLocation": "183:5:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 12,
+											"src": "178:10:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 8,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "178:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 11,
+											"mutability": "mutable",
+											"name": "quantity",
+											"nameLocation": "203:8:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 12,
+											"src": "198:13:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 10,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "198:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										}
+									],
+									"name": "Order",
+									"nameLocation": "139:5:0",
+									"nodeType": "StructDefinition",
+									"scope": 21,
+									"src": "132:86:0",
+									"visibility": "public"
+								},
+								{
+									"functionSelector": "d09ef241",
+									"id": 20,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getOrder",
+									"nameLocation": "232:8:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 15,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 14,
+												"mutability": "mutable",
+												"name": "id",
+												"nameLocation": "246:2:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 20,
+												"src": "241:7:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 13,
+													"name": "uint",
+													"nodeType": "ElementaryTypeName",
+													"src": "241:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "240:9:0"
+									},
+									"returnParameters": {
+										"id": 19,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 18,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 20,
+												"src": "273:12:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_struct$_Order_$12_memory_ptr",
+													"typeString": "struct IOrderBook.Order"
+												},
+												"typeName": {
+													"id": 17,
+													"nodeType": "UserDefinedTypeName",
+													"pathNode": {
+														"id": 16,
+														"name": "Order",
+														"nameLocations": [
+															"273:5:0"
+														],
+														"nodeType": "IdentifierPath",
+														"referencedDeclaration": 12,
+														"src": "273:5:0"
+													},
+													"referencedDeclaration": 12,
+													"src": "273:5:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_struct$_Order_$12_storage_ptr",
+														"typeString": "struct IOrderBook.Order"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "272:14:0"
+									},
+									"scope": 21,
+									"src": "223:64:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 32,
+							"src": "105:184:0",
+							"usedErrors": [],
+							"usedEvents": []
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "IStatus",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 31,
+							"linearizedBaseContracts": [
+								31
+							],
+							"name": "IStatus",
+							"nameLocation": "301:7:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "IStatus.Status",
+									"id": 24,
+									"members": [
+										{
+											"id": 22,
+											"name": "Pending",
+											"nameLocation": "337:7:0",
+											"nodeType": "EnumValue",
+											"src": "337:7:0"
+										},
+										{
+											"id": 23,
+											"name": "Complete",
+											"nameLocation": "354:8:0",
+											"nodeType": "EnumValue",
+											"src": "354:8:0"
+										}
+									],
+									"name": "Status",
+									"nameLocation": "320:6:0",
+									"nodeType": "EnumDefinition",
+									"src": "315:53:0"
+								},
+								{
+									"functionSelector": "4e69d560",
+									"id": 30,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getStatus",
+									"nameLocation": "382:9:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 25,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "391:2:0"
+									},
+									"returnParameters": {
+										"id": 29,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 28,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 30,
+												"src": "417:6:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_enum$_Status_$24",
+													"typeString": "enum IStatus.Status"
+												},
+												"typeName": {
+													"id": 27,
+													"nodeType": "UserDefinedTypeName",
+													"pathNode": {
+														"id": 26,
+														"name": "Status",
+														"nameLocations": [
+															"417:6:0"
+														],
+														"nodeType": "IdentifierPath",
+														"referencedDeclaration": 24,
+														"src": "417:6:0"
+													},
+													"referencedDeclaration": 24,
+													"src": "417:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_enum$_Status_$24",
+														"typeString": "enum IStatus.Status"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "416:8:0"
+									},
+									"scope": 31,
+									"src": "373:52:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 32,
+							"src": "291:136:0",
+							"usedErrors": [],
+							"usedEvents": []
+						}
+					],
+					"src": "32:396:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
