@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.24+commit.e11b9ed9"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -32,9 +32,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/sample5-17.sol": "VendingMachine"
+			"chapter05/sample5-17-1.sol": "VendingMachine"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -46,7 +46,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter05/sample5-17.sol": {
+		"chapter05/sample5-17-1.sol": {
 			"keccak256": "0x0b1cd01bc4a918fa4890f6df18945f6bbbfc2981479bd9fdd5a13956fe7445de",
 			"license": "MIT",
 			"urls": [

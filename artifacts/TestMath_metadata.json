@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "TestAdd",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "TestDivide",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "TestMinus",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "TestMultiple",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"chapter05/sample5-12.sol": "TestMath"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"chapter05/math.sol": {
+			"keccak256": "0xc3b20db233ec5f13f4643279c51f5d7357e752d52bcf83e64381834bf820128a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://de72cbfcf81d18bc5a6e1c1031306a452728a15d91015325fb5228bc2d38d081",
+				"dweb:/ipfs/QmdZC3i7r1PbqTNtTazAHzNaWJeM3VV4NAUQtzZcaeTGg5"
+			]
+		},
+		"chapter05/sample5-12.sol": {
+			"keccak256": "0x001c37443340a376d1684f46b96794e092b066d4578c2889f2571a81e85df11b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://67f11427d729b81644884750ddae0bf2ce976521bc9e29f13e9f644ffe02f728",
+				"dweb:/ipfs/QmXkvnZWrY6tLhupHb69SEFnJLEFP1we1BnJH2pZPuhvKc"
+			]
+		}
+	},
+	"version": 1
+}
