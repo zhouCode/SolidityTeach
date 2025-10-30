@@ -15,7 +15,7 @@ contract OnlineStore {
     // 外部调用的购买函数
     function buySomething() external payable {
         // 检查价格是否正确
-        require(msg.value == 0.001 ether, "Incorrect amount sent.");
+        require(msg.value > 0.001 ether, "Incorrect amount sent.");
         
         // 调用内部的 "转移物品" 函数
         _transferThing(msg.sender);

@@ -7,7 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getAccount1Balance",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "balance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,23 +25,34 @@
 			},
 			{
 				"inputs": [],
-				"name": "getOwnerBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "pay",
+				"name": "deposit",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "destroyWallet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -52,7 +68,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/sample5-06.sol": "PayDemo"
+			"test/wallPro.sol": "WalletPro"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -66,12 +82,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter05/sample5-06.sol": {
-			"keccak256": "0x971b3d425a0c0d7c106ef9ac3966a54754ee35edc3a48efed6d11b51b44e49d8",
+		"test/wallPro.sol": {
+			"keccak256": "0x5ebe396ad3259c5da6df1a9d9320154a0153f38883fcba71fe928e8fcbad12e8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f53a5c3d3bd9270aca655508624bb95e81a65b69356f8b08d6f2f7fcd2c98a49",
-				"dweb:/ipfs/QmXdY1dZtZkEg5TdyQLa8J48nSNGGGwdv75gAueMc9MFzU"
+				"bzz-raw://61148a37560a7a7dff4c068518938ba4f3f1c39b2ab9fefffdb470567a4d3342",
+				"dweb:/ipfs/QmTRopgxrW4hscCRMfak6CysMsb4hM8GZDHVvdJWdk1Dsp"
 			]
 		}
 	},

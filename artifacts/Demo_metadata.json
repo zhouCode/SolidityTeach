@@ -6,8 +6,14 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "sum_arr",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_max",
+						"type": "uint256"
+					}
+				],
+				"name": "sum_even",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -15,7 +21,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -32,7 +38,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter03/sample3-8.sol": "Demo"
+			"chapter04/sample4-7.sol": "Demo"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -46,12 +52,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter03/sample3-8.sol": {
-			"keccak256": "0x71d6f5978b00e4410db086e97d1b8dc2d9d0e2d8a1ff3c8f7b072d1b71a5cf92",
+		"chapter04/sample4-7.sol": {
+			"keccak256": "0x3e327147ddb91c3d813989e2c0868964ccea52f56bce7992506ca7a2fa1e7c84",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://60c61a7b85867831cdd1030bef1f62d922d06f2ca31418c31a33de1f74982a76",
-				"dweb:/ipfs/QmVEYDzicjMWbquu4yvR8rChb8aZWbcBdpicPbQbcTbTPG"
+				"bzz-raw://1fdda4de26a29f75e0c2935627815580d5971cfeb20262114b9df6e0c33517dc",
+				"dweb:/ipfs/QmY7eEvCxkcE4ekZb313mu4jwjaAqSVFdzGVyTC6D8Y8ga"
 			]
 		}
 	},

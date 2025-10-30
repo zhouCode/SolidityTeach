@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/interface.sol": "Test"
+			"test/wallPro.sol": "SafeMath"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -32,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter05/interface.sol": {
-			"keccak256": "0xd4015b03619ed829ade1a1546afbed9b3cca2784f80d9a96189e4f293097d89c",
+		"test/wallPro.sol": {
+			"keccak256": "0x5ebe396ad3259c5da6df1a9d9320154a0153f38883fcba71fe928e8fcbad12e8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://747d57d1796a74a69dfb788cf80e5c11ef6dbfe41b7ae8f2226647951217b253",
-				"dweb:/ipfs/QmZKPiiSFB6L2wQGyfcbd6Gw7EHJVtqAHXo4p1J5sBocvG"
+				"bzz-raw://61148a37560a7a7dff4c068518938ba4f3f1c39b2ab9fefffdb470567a4d3342",
+				"dweb:/ipfs/QmTRopgxrW4hscCRMfak6CysMsb4hM8GZDHVvdJWdk1Dsp"
 			]
 		}
 	},
