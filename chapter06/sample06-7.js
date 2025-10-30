@@ -57,7 +57,10 @@
         // 这次，txFromBlock 将是
         // 一个有效的交易对象，不再是 undefined
         console.log(`[6.3.5] 从区块获取交易 (block.transactions[i]): 哈希 ${txFromBlock.hash}`);
-
+        console.log(`[6.3.5] 从区块获取交易 (getTransactionFromBlock): 详情: `);
+        for (const key in txFromBlock) {
+            console.log(`${key}: ${txFromBlock[key]}`); // 输出: a, b, c
+        }
         console.log("=== Ethers.js v5 (Remix) 演示结束 ===");
 
     } catch (e) {

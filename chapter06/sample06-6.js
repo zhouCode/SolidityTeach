@@ -29,7 +29,12 @@
         // (注意：上一步的 txReceipt 就是收据了，这里我们为了演示 API 重新获取一次)
         const receipt = await web3.eth.getTransactionReceipt(txReceipt.transactionHash); 
         console.log(`[6.3.7] 获取收据 (getTransactionReceipt): 状态 ${receipt.status}, Gas使用 ${receipt.gasUsed}`);
-        
+        console.log(`[6.3.7] 收据详情：`);
+        for (const key in receipt) {
+            console.log(`${key}: ${receipt[key]}`); // 输出: a, b, c
+        }
+        console.log(`=== 收据详情输出结束！ ===`);
+
         // 我们需要收据中的信息来进行下一步
         const txHash = receipt.transactionHash;
         const blockNum = receipt.blockNumber;
@@ -37,19 +42,22 @@
 
         
         // --- 6.3.6 根据交易哈希获取交易对象 ---
-        const tx = await web3.eth.getTransaction(txHash); // [cite: 452]
+        const tx = await web3.eth.getTransaction(txHash); 
         console.log(`[6.3.6] 获取交易 (getTransaction): 交易金额 ${web3.utils.fromWei(tx.value, "ether")} ETH`);
 
 
         // --- 6.3.4 获取指定区块中的交易数量 ---
-        const txCountInBlock = await web3.eth.getBlockTransactionCount(blockNum); // [cite: 361]
+        const txCountInBlock = await web3.eth.getBlockTransactionCount(blockNum);
         console.log(`[6.3.4] 区块 ${blockNum} 中的交易数 (getBlockTransactionCount): ${txCountInBlock}`);
 
 
         // --- 6.3.5 获取指定区块中的交易详情 ---
-        const txFromBlock = await web3.eth.getTransactionFromBlock(blockNum, txIndex); // [cite: 407]
+        const txFromBlock = await web3.eth.getTransactionFromBlock(blockNum, txIndex); 
         console.log(`[6.3.5] 从区块获取交易 (getTransactionFromBlock): 哈希 ${txFromBlock.hash}`);
-
+        console.log(`[6.3.5] 从区块获取交易 (getTransactionFromBlock): 详情: `);
+        for (const key in txFromBlock) {
+            console.log(`${key}: ${txFromBlock[key]}`); // 输出: a, b, c
+        }
         console.log("=== Web3.js 演示结束 ===");
 
     } catch (e) {
