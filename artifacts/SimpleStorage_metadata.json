@@ -6,13 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_initialNumber",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "balance",
+				"name": "get",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -25,34 +31,29 @@
 			},
 			{
 				"inputs": [],
-				"name": "deposit",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "destroyWallet",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "owner",
+				"name": "myNumber",
 				"outputs": [
 					{
-						"internalType": "address payable",
+						"internalType": "uint256",
 						"name": "",
-						"type": "address"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "receive"
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -68,7 +69,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test/WalletPro.sol": "WalletPro"
+			"chapter06/SimpleStorage.sol": "SimpleStorage"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -82,12 +83,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"test/WalletPro.sol": {
-			"keccak256": "0xdf732349aa979f267fea319aad056d636dedef4c72c0b6ad5029a6d96f486072",
+		"chapter06/SimpleStorage.sol": {
+			"keccak256": "0xc40c86f0e4de57420d40b02a0d7f4afba6c0877b5a209abf7bff9e6e6e85c858",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c500413a9b4fa1ba89bf3345fb01f1412ee802c3d532671612f258b0f1e02b2e",
-				"dweb:/ipfs/QmYJiHy9gEYdcBoNgdYkkNvCFNmQsXmujsqgRqekAmPbfM"
+				"bzz-raw://7abfa3174f60e76c83d07a2e61a347849e16aa4d0afe99d252ca445fa1e386e4",
+				"dweb:/ipfs/QmcDzVKZbt2zwWrmqxuXR5TXEDLU1a9g3pTg8tf8Pb71bG"
 			]
 		}
 	},

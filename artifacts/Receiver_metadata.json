@@ -1,10 +1,15 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,9 +23,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/interface.sol": "Test"
+			"test/Receiver.sol": "Receiver"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -32,12 +37,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter05/interface.sol": {
-			"keccak256": "0x5cbf6caf99d75056356eaa094a20661225b2e406905b04db93031bc448b8f1a7",
+		"test/Receiver.sol": {
+			"keccak256": "0xa874c852363a91e5e161dac5499e7d0d47d14d578a4ac4804dd78fa14de3168c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6e9dcf290deef03ff794cd04f5a693ef7d5fe3fa30c64fa5d8b5ad4a3c18e2f8",
-				"dweb:/ipfs/QmP3vq2JgPVzCb5CsQkGmc5WzBEHJG29Jg6MfzT3whxFVL"
+				"bzz-raw://64310be8191a615ed3de67aaba57d7711a0bd3fde1a0888729bb578750ca4c29",
+				"dweb:/ipfs/QmXH4QPmGwTEA4RqogeNf7qUV1mU3eWGNYgxMFcncFXNw8"
 			]
 		}
 	},

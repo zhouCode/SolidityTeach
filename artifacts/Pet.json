@@ -62,13 +62,7 @@
 				}
 			],
 			"name": "cry",
-			"outputs": [
-				{
-					"internalType": "string",
-					"name": "",
-					"type": "string"
-				}
-			],
+			"outputs": [],
 			"stateMutability": "nonpayable",
 			"type": "function"
 		}

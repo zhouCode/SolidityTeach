@@ -1,6 +1,5 @@
-// sample6-01.js
+// 文件名 sample6-01.js
 (async () => {
-    
     console.log("--- Web3.js 演示 ---");
     try {
         console.log("Remix 自动注入的 Web3 版本 (web3.version):", web3.version);
@@ -12,10 +11,10 @@
 
         const version = await web3.eth.getProtocolVersion();
         console.log("Protocol Version (web3.eth.getProtocolVersion):", version);
+    
     } catch (e) {
         console.error("Web3.js 部分出错:", e);
     }
-
     console.log("\n" + "---".repeat(10) + "\n"); // 分隔符
 
     console.log("--- Ethers.js (v5) 演示 ---");

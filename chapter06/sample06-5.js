@@ -10,6 +10,7 @@
         address = accounts[0];
 
         const balanceWeiWeb3 = await web3.eth.getBalance(address); // 结果是 Wei (字符串)
+        
         console.log("Web3.js 余额 (Wei):", balanceWeiWeb3);
         console.log("Web3.js 余额 (ETH):", web3.utils.fromWei(balanceWeiWeb3, "ether"));
     } catch (e) {

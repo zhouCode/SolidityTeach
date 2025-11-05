@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.24+commit.e11b9ed9"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -117,7 +117,7 @@
 		"compilationTarget": {
 			"chapter05/math.sol": "Math"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -130,11 +130,11 @@
 	},
 	"sources": {
 		"chapter05/math.sol": {
-			"keccak256": "0x833ebab386f464bdb080e8ef4acf83479fa08dc17f3866738178cd72f54cc967",
+			"keccak256": "0xc3b20db233ec5f13f4643279c51f5d7357e752d52bcf83e64381834bf820128a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ddc63757768556c1dd4a3e2f5d7df9a74b6ac135796168ae805389436f573862",
-				"dweb:/ipfs/QmSqg2NjpPgxFtMbyoCQLGjrRN27q2Fukem7XXwtwTKGfa"
+				"bzz-raw://de72cbfcf81d18bc5a6e1c1031306a452728a15d91015325fb5228bc2d38d081",
+				"dweb:/ipfs/QmdZC3i7r1PbqTNtTazAHzNaWJeM3VV4NAUQtzZcaeTGg5"
 			]
 		}
 	},

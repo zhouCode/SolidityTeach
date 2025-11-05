@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-// TODO 1: 使用 ';interface'; 关键字定义 IERC20
+// TODO 1: 使用 ';;interface';; 关键字定义 IERC20
 interface IERC20 {
     function balanceOf(address account) external view returns (uint);
     
@@ -12,7 +12,7 @@ interface IERC20 {
 }
 
 
-// TODO 3: 使用 ';abstract contract'; 关键字定义 TokenBase
+// TODO 3: 使用 ';;abstract contract';; 关键字定义 TokenBase
 abstract contract TokenBase is IERC20 { // TODO 4: 继承 IERC20
     
     mapping(address => uint) public balances;
@@ -62,3 +62,4 @@ contract MyToken is TokenBase {
         return this.approve(spender, amount);
     }
 }
+ 

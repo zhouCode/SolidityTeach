@@ -14,13 +14,7 @@
 					}
 				],
 				"name": "cry",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -38,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"chapter05/sample5-15-1.sol": "Cat"
+			"chapter05/sample5-15-2.sol": "Cat"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -52,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"chapter05/sample5-15-1.sol": {
-			"keccak256": "0xbe195d7cdce92a953f4cb35fd4b3fe2fb3c3727cbf1e9be353682447946f44ba",
+		"chapter05/sample5-15-2.sol": {
+			"keccak256": "0x3a6a35747463bec1c04a7642e08f99469b68157a860694bc16287ce14221dd04",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://07abe0c7bae4c07ed11c1a2e64d308b298626d2f9cd7f21b148de45682114564",
-				"dweb:/ipfs/QmVZ5yY1TQvSWKUR2LXcGHp7qpTF4XMdvdhW9pu4qmbcRA"
+				"bzz-raw://9e2226b745f6d0bd4efe9d461c3407769767af4cda5970ff089d531ac8eeb730",
+				"dweb:/ipfs/QmNprCR6gdKRNNJfHL5nm845U3k5na4jTRGvHjgCJxrpiL"
 			]
 		}
 	},

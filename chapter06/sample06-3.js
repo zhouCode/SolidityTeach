@@ -2,11 +2,11 @@
 
 (async () => {
 
-    let blockNum; // 在外部定义，以便两个部分都能使用
+    // let blockNum; // 在外部定义，以便两个部分都能使用
 
     console.log("--- 6.2.4 获取指定区块详情 (Web3.js) ---");
     try {
-        blockNum = await web3.eth.getBlockNumber(); // 获取当前区块号
+        const blockNum = await web3.eth.getBlockNumber(); // 获取当前区块号
         console.log("Web3.js 当前区块号:", blockNum);
 
         // true = 包含完整交易对象

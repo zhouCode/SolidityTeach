@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
@@ -64,7 +64,7 @@
 		"compilationTarget": {
 			"test/MyToken.sol": "IERC20"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -77,11 +77,11 @@
 	},
 	"sources": {
 		"test/MyToken.sol": {
-			"keccak256": "0xd8ae7877d784ba7fcaa6fab6f8fd47ca62d97280e5a9f45f07b740fda68854fd",
+			"keccak256": "0x5d14b79b6ddccdeb9815abba8ad7f35854399a2798f14fa9b2d74dc3e4ba69e7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d435779f57c88130df925fc6741135c87025f4bf6987665660feb35e3975a330",
-				"dweb:/ipfs/QmYCA9FcPwvhzX2AT4CwymZPrFykP1G65jYw4HBsUynWGS"
+				"bzz-raw://a20fedb2ad9f5568c1b276f8ec3d46ace37e99d8a45744e6ca6138a4c9e52f92",
+				"dweb:/ipfs/QmbuLmeRNqQm7yWNhhj2QpdqByGGdQJHpczjEngFt9yuDV"
 			]
 		}
 	},

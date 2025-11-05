@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.24+commit.e11b9ed9"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -94,7 +94,7 @@
 		"compilationTarget": {
 			"chapter05/sample5-14.sol": "SendFallback"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"

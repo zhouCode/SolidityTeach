@@ -5,7 +5,7 @@ abstract contract Pet {
     function cry(string memory _sound) public virtual returns (string memory);
 }
 
-// Cat合约现在正确地实现了Pet接口
+// Cat合约现在正确地实现了Pet
 contract Cat is Pet {
     // 为了遵守接口，函数签名必须完全匹配
     // 'external' 的接口可以用 'public' 或 'external' 来实现

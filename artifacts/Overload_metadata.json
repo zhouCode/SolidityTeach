@@ -66,11 +66,11 @@
 	},
 	"sources": {
 		"chapter05/sample5-11.sol": {
-			"keccak256": "0x7848df0acc0f78d6ae03a4961a58ddd035f4166990be7e5be5bc56faac5cf2f7",
+			"keccak256": "0x918f3afa6656111af40f9e7ad187b5e96ec294bc9bea3bb7baa830bd1d43571d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://85eb19f41bb9f6cf330fc94bcdec66680dc875bac16af888d24ba0cec64fd515",
-				"dweb:/ipfs/QmcEn7yuv1oZ4GQ2g44SZfLLLqNi4zznA4SFNuft1iTp4o"
+				"bzz-raw://9f03b9587d71149ca7d1f7f320e606d231af4b6cf0a9303a0583bf116f4a1c3c",
+				"dweb:/ipfs/QmSRyN2coDweoRN3ay4tfiFRLxrNJx5jiQxw9GzqVafE79"
 			]
 		}
 	},

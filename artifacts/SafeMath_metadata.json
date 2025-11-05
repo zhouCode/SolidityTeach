@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
@@ -18,9 +18,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test/wallPro.sol": "SafeMath"
+			"test/WalletPro.sol": "SafeMath"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -32,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"test/wallPro.sol": {
-			"keccak256": "0x5ebe396ad3259c5da6df1a9d9320154a0153f38883fcba71fe928e8fcbad12e8",
+		"test/WalletPro.sol": {
+			"keccak256": "0xdf732349aa979f267fea319aad056d636dedef4c72c0b6ad5029a6d96f486072",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://61148a37560a7a7dff4c068518938ba4f3f1c39b2ab9fefffdb470567a4d3342",
-				"dweb:/ipfs/QmTRopgxrW4hscCRMfak6CysMsb4hM8GZDHVvdJWdk1Dsp"
+				"bzz-raw://c500413a9b4fa1ba89bf3345fb01f1412ee802c3d532671612f258b0f1e02b2e",
+				"dweb:/ipfs/QmYJiHy9gEYdcBoNgdYkkNvCFNmQsXmujsqgRqekAmPbfM"
 			]
 		}
 	},

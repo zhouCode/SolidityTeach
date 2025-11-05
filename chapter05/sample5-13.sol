@@ -11,8 +11,8 @@ contract ExecuteFallback {
     }
     //Fallback事件，会把调用的数据打印出来
     event FallbackCalled(bytes data);
-    //fallback函数，注意是没有名字的，没有参数，没有返回值的
-    // 旧版写法：
+    
+    // 旧版中 fallback 函数，是没有名字的，没有参数，没有返回值的
     // function() external{
     //   emit FallbackCalled(msg.data);//触发事件
     // }

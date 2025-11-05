@@ -10,7 +10,7 @@ contract modifierDemo{
         seller = msg.sender;
     }
 
-    //指定调用者必须是seller，否则抛出异常
+    // 指定调用者必须是seller，否则抛出异常
     modifier OnlySeller(){
         require (msg.sender==seller, unicode"必须是卖家");
         _;

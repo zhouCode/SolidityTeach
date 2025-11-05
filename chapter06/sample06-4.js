@@ -3,8 +3,8 @@
 (async () => {
     console.log("--- 6.3.1 获取账户列表 (Web3.js) ---");
     try {
-        const accountsWeb3 = await web3.eth.getAccounts();
-        console.log("Web3.js 账户:", accountsWeb3[0], "..."); // accountsWeb3 是地址字符串数组
+        let accountsWeb3 = await web3.eth.getAccounts();
+        console.log("Web3.js 账户:", accountsWeb3[14], "..."); // accountsWeb3 是地址字符串数组
     } catch (e) {
         console.error("Web3.js 部分出错:", e);
     }
