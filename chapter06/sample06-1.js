@@ -15,6 +15,7 @@
     } catch (e) {
         console.error("Web3.js 部分出错:", e);
     }
+
     console.log("\n" + "---".repeat(10) + "\n"); // 分隔符
 
     console.log("--- Ethers.js (v5) 演示 ---");
