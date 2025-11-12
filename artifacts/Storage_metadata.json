@@ -6,8 +6,19 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_initialNumber",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [],
-				"name": "count",
+				"name": "myNumber",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,7 +31,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "get",
+				"name": "retrieve",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -32,8 +43,14 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "increment",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -52,7 +69,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test/Counter.sol": "Counter"
+			"test/Storage.sol": "Storage"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -66,12 +83,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"test/Counter.sol": {
-			"keccak256": "0x17749f2cbee15867c40234afce30a814d14f812ee7959fa1b9ce3db508dd9952",
+		"test/Storage.sol": {
+			"keccak256": "0x7538ece3c0fc29c6dcadeffe6b8a7ba7fa2ddae37c71369444fc153c0f417104",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://676f5ede25d9d1c409bb999086db8321df2f34c7f08d0f0aecc19514105b93cf",
-				"dweb:/ipfs/QmNMsZQMqcHPZz1m1azarY4mCHgKZz1piRmAa8ErgcJjv8"
+				"bzz-raw://ff4dbb5134db2c8821053a4e0c037fcf7a2d4f760557205f7b90fd8a2469e1c8",
+				"dweb:/ipfs/QmVcQfrELbipYC5VRyzTfVkwB2jibHcf52JzChUebcCh1U"
 			]
 		}
 	},
