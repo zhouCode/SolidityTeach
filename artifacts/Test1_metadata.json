@@ -6,21 +6,21 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "x",
-						"type": "uint256"
-					}
-				],
-				"name": "setValue",
+				"inputs": [],
+				"name": "modifyArray",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "x",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "numbers",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test/sample.sol": "Test2"
+			"test/sample.sol": "Test1"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -60,11 +60,11 @@
 	},
 	"sources": {
 		"test/sample.sol": {
-			"keccak256": "0x334ba8a8d12411d90eb3cd15b35ad59230e7ab7c18a4a3b7e411490d902486b8",
+			"keccak256": "0x1eb4deb433f0a4c63e3cde1e67210ff37ecf791df87be3bfa1ebebfcfaf24186",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://36f2ad7deb3cc5fa69d51b4835cc1fd1fc3e6e0e3b55767ed00fb5872f1dce94",
-				"dweb:/ipfs/QmWaLGxWZbsiskpVTPmdEc9fn2iybAhJ9urrxRTLTg2qNx"
+				"bzz-raw://4b5a0db6a3238f04b4636632617df95c92d7ac600234c27e153eec25aba44943",
+				"dweb:/ipfs/QmYEqa9EnuFnZF7gf87uUCp9n62bmxW4bBqk9U7XaD5BLp"
 			]
 		}
 	},

@@ -6,29 +6,29 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "x",
-						"type": "uint256"
-					}
-				],
-				"name": "setValue",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "x",
+				"name": "lastCallSuccess",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bool",
 						"name": "",
-						"type": "uint256"
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "sendTo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test/sample.sol": "Test2"
+			"test/sample.sol": "Sender"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -60,11 +60,11 @@
 	},
 	"sources": {
 		"test/sample.sol": {
-			"keccak256": "0x334ba8a8d12411d90eb3cd15b35ad59230e7ab7c18a4a3b7e411490d902486b8",
+			"keccak256": "0x74f901ab6a5bb250d7db354ad303938930bce81183543c0a04dab3f4e708b02b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://36f2ad7deb3cc5fa69d51b4835cc1fd1fc3e6e0e3b55767ed00fb5872f1dce94",
-				"dweb:/ipfs/QmWaLGxWZbsiskpVTPmdEc9fn2iybAhJ9urrxRTLTg2qNx"
+				"bzz-raw://0e200046b03346cf52a1651c1099696f011d49e1046d10fa551513de28f733eb",
+				"dweb:/ipfs/QmTmgfozEuRfHBZcCAE2cYrkBhY1yxSnLRJzTSpevQnFs4"
 			]
 		}
 	},

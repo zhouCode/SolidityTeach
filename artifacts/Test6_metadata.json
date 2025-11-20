@@ -6,21 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "x",
-						"type": "uint256"
-					}
-				],
-				"name": "setValue",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "x",
+				"name": "balance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -29,6 +16,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -45,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test/sample.sol": "Test2"
+			"test/sample.sol": "Test6"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -60,11 +54,11 @@
 	},
 	"sources": {
 		"test/sample.sol": {
-			"keccak256": "0x334ba8a8d12411d90eb3cd15b35ad59230e7ab7c18a4a3b7e411490d902486b8",
+			"keccak256": "0x0fc8d8e32e1c9aadc482174217b0ce694622b7fa8b6582393aa889fd04c4e953",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://36f2ad7deb3cc5fa69d51b4835cc1fd1fc3e6e0e3b55767ed00fb5872f1dce94",
-				"dweb:/ipfs/QmWaLGxWZbsiskpVTPmdEc9fn2iybAhJ9urrxRTLTg2qNx"
+				"bzz-raw://3d67adaf50e16cab15c2f84846dbb89e8f3fe20586fad21a7ee15ab200915b08",
+				"dweb:/ipfs/QmWQqpw5qKLp22LCPmzuxi3otXQmGagCae9iX3sca12ryL"
 			]
 		}
 	},

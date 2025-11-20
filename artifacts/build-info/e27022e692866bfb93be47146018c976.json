@@ -1,8 +1,8 @@
 {
-	"id": "1aac516714a15d34e964bdd0e6685058",
+	"id": "e27022e692866bfb93be47146018c976",
 	"_format": "hh-sol-build-info-1",
-	"solcVersion": "0.8.24",
-	"solcLongVersion": "0.8.24+commit.e11b9ed9",
+	"solcVersion": "0.8.30",
+	"solcLongVersion": "0.8.30+commit.73712a01",
 	"input": {
 		"language": "Solidity",
 		"sources": {

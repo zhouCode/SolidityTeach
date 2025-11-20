@@ -9,7 +9,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "x",
+						"name": "_newValue",
 						"type": "uint256"
 					}
 				],
@@ -20,7 +20,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "x",
+				"name": "value",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test/sample.sol": "Test2"
+			"test/sample.sol": "Logic"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -60,11 +60,11 @@
 	},
 	"sources": {
 		"test/sample.sol": {
-			"keccak256": "0x334ba8a8d12411d90eb3cd15b35ad59230e7ab7c18a4a3b7e411490d902486b8",
+			"keccak256": "0x7653519dd6d8dcf6dc1f3190623c4316bb5c5b2bac109c495ae567b716e8ec58",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://36f2ad7deb3cc5fa69d51b4835cc1fd1fc3e6e0e3b55767ed00fb5872f1dce94",
-				"dweb:/ipfs/QmWaLGxWZbsiskpVTPmdEc9fn2iybAhJ9urrxRTLTg2qNx"
+				"bzz-raw://593af3057f395fb8ab2b86b2bcb8e5d24f28f33dc1950dcfe7547a2ad44e9de4",
+				"dweb:/ipfs/QmeeGYCwGMMss5YWqSfnczFRDmaBiCw3JmK9tDEeicGkh2"
 			]
 		}
 	},
