@@ -38,7 +38,7 @@ async function listenToEvents() {
     // 处理数据
     subscription.on('data', (event) => {
         console.log("\n🔥 捕获到新事件！");
-        [cite_start]// event.returnValues 对应 PPT 中的 returnValues [cite: 90]
+        // event.returnValues 对应 PPT 中的 returnValues 
         console.log("发送者:", event.returnValues.sender);
         console.log("新数值:", event.returnValues.newValue); // v1.x 可能直接返回字符串，视具体版本而定
         console.log("新消息:", event.returnValues.message);
